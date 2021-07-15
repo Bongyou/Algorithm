@@ -31,8 +31,8 @@ public class BJ_1018 {
 
         for (int i = 0; i <= N - 8; i++) {
             for (int j = 0; j <= M - 8; j++) {
-                start_black(i, j);
-                start_white(i, j);
+                start_black(i, j); // 시작이 B인 경우
+                start_white(i, j); // 시작이 W인 경우
             }
         }
 
@@ -49,8 +49,8 @@ public class BJ_1018 {
                     cnt++;
                 }
 
-                if (cnt > ans) {
-                    return;
+                if (cnt > ans) { // 바꿔야 할 갯수가 현재 최솟값보다 많아진다면
+                    return; // 함수 종료
                 }
 
                 if (c == j + 7) {
@@ -74,8 +74,8 @@ public class BJ_1018 {
                     cnt++;
                 }
 
-                if (cnt > ans) {
-                    return;
+                if (cnt > ans) { // 바꿔야 할 갯수가 현재 최솟값보다 많아진다면
+                    return; // 함수 종료
                 }
 
                 if (c == j + 7) {
