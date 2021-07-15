@@ -16,14 +16,14 @@ public class SW_2072 {
         for (int t = 1; t <= T; t++) {
             st = new StringTokenizer(br.readLine().trim());
 
-            int sum = 0;
-            int n = 0;
+            int sum = 0; // 홀수 값의 합을 저장할 변수
+            int n = 0; // 각 줄의 숫자를 저장할 변수
 
             for (int i = 0; i < 10; i++) {
                 n = Integer.parseInt(st.nextToken().trim());
 
-                if (n % 2 == 1) {
-                    sum += n;
+                if (n % 2 == 1) { // 값이 홀수라면
+                    sum += n; // 더하기
                 }
             }
 
